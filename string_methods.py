@@ -2,7 +2,7 @@
 Description: Python Module 3 String Methods
 Author: Raymund Estillore
 Date: 2023/09/22
-Usage: Practice Notes  
+Usage: Practice and Notes  
 """
 
 #################### String Methods ##############################
