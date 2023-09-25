@@ -7,11 +7,17 @@ Usage: Practice and Notes
 
 """ 
 Control Structures:
-- Basically the building blocks of a lnaguage.
+- Basically the building blocks of a language.
 - Allows the flow of code being read.
 
+Boolean Expressions:
+- Boolean Literal
+- Boolean Variable
+- Use of an operator
+- Function return value 
+
 Three Main Types:
-- Sequential: How statements are executed the way they are written.
+- Sequential: (Line by line) How statements are executed the way they are written.
 - Selection: (if-else) Based on the conditions.
 - Iteration: (loops) Exectuted repeatedly.
 
@@ -20,6 +26,7 @@ In Python conditional statements are the primary control structure
 """
 # Example of control structure
 number = 10
+
 if number > 0:
     print("Number is positive")
 elif number == 0:

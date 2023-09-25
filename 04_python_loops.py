@@ -62,3 +62,5 @@ for index, color in enumerate(colors):
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 squares = [number ** 2 for number in numbers if number % 2 == 1]
 print(squares) # Output [1, 9, 25, 49, 81]
+
+# While loops

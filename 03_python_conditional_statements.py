@@ -91,4 +91,10 @@ number = 5
 result = "Even" if number % 2 == 0 else "Odd"
 print(result)
 
+"""
+Membership Operators:
+- in: True when a value is in the object
+- not in: True when a value is not in the object
+"""
+
 
