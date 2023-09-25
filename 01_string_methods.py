@@ -5,7 +5,7 @@ Date: 2023/09/22
 Usage: Practice and Notes  
 """
 
-#################### String Methods ##############################
+# String Methods
 
 # capitalize()
 original_string = "hello_world"
