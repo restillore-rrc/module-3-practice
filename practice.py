@@ -86,3 +86,21 @@ if single_char2 not in abc:
     print(f"Letter '{single_char2}' is not in the list")
 else:
     print(f"Letter '{single_char2}' is in the list")
+
+# while loops
+successfully_confirm = False
+
+while not successfully_confirm:
+    password = input("Enter your new password: ")
+
+    password_confirmation = input("Confirm: ")
+
+    successfully_confirm = password == password_confirmation
+
+    confirmation_message = "Password updated." \
+        if successfully_confirm else "Confirmation was not successful. Please try again."
+
+    print(confirmation_message)
+
+# for loops
+
