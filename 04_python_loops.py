@@ -64,7 +64,7 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 squares = [number ** 2 for number in numbers if number % 2 == 1]
 print(squares) # Output [1, 9, 25, 49, 81]
 
-# While loops - undetermined unmber of iterations 
+# While loops - undetermined number of iterations 
 count = 0
 
 while count <= 10:
@@ -90,7 +90,7 @@ for number in range(1, 10):
 
 """
 How to avoid infinite loops:
-- Make sure that theres and end point where to loops turns false
+- Make sure that theres and end point where the loops turns false
 """
 
 # Example
