@@ -111,18 +111,18 @@ else:
             print(second_number)
         second_number += 1
 
-# # Question 10 - Check if entered int is a prime number 
-# prime = int(input("Enter a value: "))
+# Question 10 - Check if entered int is a prime number 
+prime = int(input("Enter a value: "))
 
-# # Question 11 - Make a program to find the sum of digits entered from the user.
-# entered_number = int(input("Enter a value to get the sum of digits: "))
-# digit = 0
-# sum = 0
+# Question 11 - Make a program to find the sum of digits entered from the user.
+entered_number = int(input("Enter a value to get the sum of digits: "))
+digit = 0
+sum = 0
 
-# while entered_number != 0: # number not equal to zero = true
-#     digit = entered_number % 10 # remainder op to get the last digit
-#     sum += digit # add the sum of each digits
-#     entered_number //= 10 # floor division to remove last digit
-#     # Will keep looping back until entered_number is zero
+while entered_number != 0: # number not equal to zero = true
+    digit = entered_number % 10 # remainder op to get the last digit
+    sum += digit # add the sum of each digits
+    entered_number //= 10 # floor division to remove last digit
+    # Will keep looping back until entered_number is zero
 
-# print("The sum is", sum)
+print("The sum is", sum)
