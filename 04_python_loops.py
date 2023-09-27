@@ -13,28 +13,62 @@ tuples, dictionaries, or strings to execute a block of code multiple times.
 # Example loops
 # for - pre-determined number of iterations 
 car_brands = ["Ferrari", "Bentley", "Pagani", "Aston Martin"]
+iteration = 0
 
 for brands in car_brands:
     print(brands)
+    iteration += 1
+
+print(iteration)
 
 fruits = ["apple", "banana", "cherry"]
 
 for fruit in fruits:
     print(fruit)
 
+name = "Raymund Estillore"
+lowercase = 0
+uppercase = 0
+whitespace = 0
+
+for char in name:
+    if char.islower():
+        lowercase += 1
+    elif char.isupper():
+        uppercase += 1
+    else:
+        whitespace += 1
+
+print(f"All lowercase: {lowercase}")
+print(f"All uppercase: {uppercase}")
+print(f"All whitespace: {whitespace}")
+
+
 # Iterating through lists, dict, and other iterable objects
 
 # List
-numbers = [1, 2, 3, 4, 5]
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9 ,10]
+iteration_ints = 0
+
+for num in numbers:
+    if num > 5:
+        print(f"Numbers more than five: {num}")
+    
 
 for int in numbers:
     print(int * 5)
+    iteration_ints += 1
+
+print(f"Ints: {iteration_ints}")
 
 # Dictionaries 
 me = {"Name": "Raymund", "Age": 21, "Grades": "A+"}
 
+for key in me:
+    print(key.lower())
+
 for key, value in me.items():
-    print(key, value)
+    print(key.upper(), value)
 
 # Strings 
 text = "Lorem ipsum dolor"
@@ -52,6 +86,9 @@ for num in range(3, 10):
 for num in range(2, 20, 2):
     print(num)
 
+for num in range(20, 2, -2):
+    print(num)
+
 # Enumerate function, index and iterate
 colors = ["Red", "Blue", "Green", "Purple"]
 
@@ -59,10 +96,14 @@ for index, color in enumerate(colors):
     print(index, color) # Ouput will be the index with element
 
 # List comprehensions with conditions
-
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 11]
+multiples_of_two = [num * num for num in numbers if num < 5]
 squares = [number ** 2 for number in numbers if number % 2 == 1]
+
+print(multiples_of_two) # Output [1, 4, 9, 16, 25, 36, 49, 64, 121]
 print(squares) # Output [1, 9, 25, 49, 81]
+
+
 
 # While loops - undetermined number of iterations 
 count = 0
@@ -73,7 +114,7 @@ while count <= 10:
 
 """
 Loop control statements (break, continue)
-- break: Stops the loops and exists
+- break: Stops the loops and exists - very rarely used. 
 - continue: Skips the remaining code in current iteration and starts the next iteration 
 """
 

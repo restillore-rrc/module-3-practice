@@ -126,3 +126,7 @@ while entered_number != 0: # number not equal to zero = true
     # Will keep looping back until entered_number is zero
 
 print("The sum is", sum)
+
+# Question 13 - Write a program to reverse the numbered entered 
+
+
