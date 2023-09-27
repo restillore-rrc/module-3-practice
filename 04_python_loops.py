@@ -103,8 +103,6 @@ squares = [number ** 2 for number in numbers if number % 2 == 1]
 print(multiples_of_two) # Output [1, 4, 9, 16, 25, 36, 49, 64, 121]
 print(squares) # Output [1, 9, 25, 49, 81]
 
-
-
 # While loops - undetermined number of iterations 
 count = 0
 
@@ -115,7 +113,7 @@ while count <= 10:
 """
 Loop control statements (break, continue)
 - break: Stops the loops and exists - very rarely used. 
-- continue: Skips the remaining code in current iteration and starts the next iteration 
+- continue: Skips the remaining code in current iteration and starts the next iteration.
 """
 
 # Example
