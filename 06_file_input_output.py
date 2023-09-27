@@ -21,7 +21,7 @@ To close a file use close() method.
 """
 
 # Opening the file
-file = open("example.txt, r")
+file = open("example.txt", "r")
 
 # Perform file operatons here
 
@@ -36,6 +36,7 @@ Reading and Writing Files:
 - write(string) - writes a specified string to the file.
 """
 
+# Reading the file and printing the content 
 file = open("example.txt", "r")
 
 content = file.read()
@@ -44,3 +45,31 @@ print(content)
 
 file.close()
 
+# Writing on the file
+file_two = open("output.txt", "w")
+
+file_two.write("This is an example.")
+
+file_two.close()
+
+"""
+Using 'with' statements for file handling 
+- Automatically closes the file when code block exists
+"""
+
+with open("example.txt", "r") as file:
+    content = file.read()
+
+    print(content)
+
+"""
+DictReader and DictWriter 
+
+"""
+
+import csv 
+
+# OR
+
+from csv import DictReader
+from csv import DictWriter
