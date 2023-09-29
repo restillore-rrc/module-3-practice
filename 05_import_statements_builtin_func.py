@@ -8,7 +8,7 @@ Usage: Practice and Notes
 """
 Module:
 - A file containing code you want to add in your program.
-- Use 'import' to include a pre-build module or you can make your own. 
+- Use 'import' to include a pre-built module or you can make your own. 
 """
 
 # print(help("modules"))

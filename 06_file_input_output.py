@@ -21,22 +21,25 @@ To close a file use close() method.
 """
 
 # Opening the file
+import csv
+from csv import DictWriter
+from csv import DictReader
 file = open("example.txt", "r")
 
-# Perform file operatons here
+# Perform file operations here
 
-# Close the file when done with file operations 
+# Close the file when done with file operations
 file.close()
 
 """
 Reading and Writing Files:
 - read() - read the entire content of the file as a string.
 - readline() - reads a single line from the file.
-- readlines() - reads all line of the file and retruns as a list of strings.
+- readlines() - reads all line of the file and returns as a list of strings.
 - write(string) - writes a specified string to the file.
 """
 
-# Reading the file and printing the content 
+# Reading the file and printing the content
 file = open("example.txt", "r")
 
 content = file.read()
@@ -64,12 +67,10 @@ with open("example.txt", "r") as file:
 
 """
 DictReader and DictWriter 
-
+- DictReader: A function used to read CSV files.
+- DictWriter: A function to write data into a CSV file.
 """
-
-import csv 
-
-# OR
-
-from csv import DictReader
-from csv import DictWriter
+with open("quantity.csv", 'r') as file:
+    reader = csv.DictReader(file)
+    for row in reader:
+        print(row["Item"], row["Quantity"])

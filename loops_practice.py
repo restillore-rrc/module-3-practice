@@ -114,7 +114,7 @@ else:
 # Question 10 - Check if entered int is a prime number 
 prime = int(input("Enter a value: "))
 
-# Question 11 - Make a program to find the sum of digits entered from the user.
+# Question 11 - Make a program to find the sum of all digits entered from the user.
 entered_number = int(input("Enter a value to get the sum of digits: "))
 digit = 0
 sum = 0
@@ -127,7 +127,7 @@ while entered_number != 0: # number not equal to zero = true
 
 print("The sum is", sum)
 
-# Question 13 - Write a program to reverse the numbers entered - use while loop
+# Question 13 - Write a program to reverse the numbers entered - use while loop.
 
 reversed_number = int(print("Enter a number to reverse it: "))
 
