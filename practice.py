@@ -5,103 +5,127 @@ Date: 2023/09/23
 Usage: Practice and Notes  
 """
 
-# Boolean Literals
-print(True)
-print(False)
+# # Boolean Literals
+# print(True)
+# print(False)
 
-# Boolean Variables
-is_raining_today = True
-print(is_raining_today)
+# # Boolean Variables
+# is_raining_today = True
+# print(is_raining_today)
 
-# Boolean Functions - Return a boolean value
-name = "Raymund"
+# # Boolean Functions - Return a boolean value
+# name = "Raymund"
 
-is_alpha = name.isalpha()
-print(is_alpha)
-print(name.isdigit())
+# is_alpha = name.isalpha()
+# print(is_alpha)
+# print(name.isdigit())
 
-# Boolean Operators 
-# Synatx
-# Operand Operator Operand
-age = 21
+# # Boolean Operators
+# # Synatx
+# # Operand Operator Operand
+# age = 21
 
-print(age == 21) # True
-print(age != 20) # True
-print(age <= 21) # True
-print(age < 30) # True
-print(age > 30) # False 
+# print(age == 21) # True
+# print(age != 20) # True
+# print(age <= 21) # True
+# print(age < 30) # True
+# print(age > 30) # False
 
-# Synatx 
-# if boolean_expression:
-#       statement(s)
+# # Synatx
+# # if boolean_expression:
+# #       statement(s)
+# # else:
+# #       statement(s)
+
+# if age == 21:
+#     print(f"Age is {age} years old.")
+#     print("This is part of the block.")
+
+# print("This is not part of the block.")
+
+# age = 69
+
+# if age > 25:
+#     print("Age is greater than 25")
 # else:
-#       statement(s)
+#     print("Age is less than 25")
 
-if age == 21:
-    print(f"Age is {age} years old.")
-    print("This is part of the block.")
+# age = 40
 
-print("This is not part of the block.")
+# if age == 30:
+#     print("You are 30 years old")
+# elif age == 40:
+#     print("You are 40 years old")
+# else:
+#     print("Age is not a value")
 
-age = 69
+# # Syntax operand and operand
+# if age >= 21 and name == "Raymund":
+#     print("Both statements are True")
 
-if age > 25:
-    print("Age is greater than 25")
-else:
-    print("Age is less than 25")
+# if age >= 25 or name == "Raymund":
+#     print("One of the statments was True")
 
-age = 40 
+# # Conditional Operator
+# # Syntax: operand if operand else operand
+# age_description = "Old" if age < 30 else "Young"
 
-if age == 30:
-    print("You are 30 years old")
-elif age == 40:
-    print("You are 40 years old")
-else:
-    print("Age is not a value")
+# print(age_description)
 
-# Syntax operand and operand
-if age >= 21 and name == "Raymund":
-    print("Both statements are True")
+# abc = ["A", "B", "C", "D", "E", "F", "G"]
+# single_char = "C"
+# single_char2 = "H"
 
-if age >= 25 or name == "Raymund":
-    print("One of the statments was True")
+# # Synatx: Operand in operand, operand not in operand
+# if single_char in abc:
+#     print(f"Letter '{single_char}' is in the list")
+# else:
+#     print(f"Letter '{single_char}' is not in the list")
 
-# Conditional Operator 
-# Syntax: operand if operand else operand 
-age_description = "Old" if age < 30 else "Young"
+# if single_char2 not in abc:
+#     print(f"Letter '{single_char2}' is not in the list")
+# else:
+#     print(f"Letter '{single_char2}' is in the list")
 
-print(age_description)
+# # while loops
+# successfully_confirm = False
 
-abc = ["A", "B", "C", "D", "E", "F", "G"]
-single_char = "C"
-single_char2 = "H"
+# while not successfully_confirm:
+#     password = input("Enter your new password: ")
 
-# Synatx: Operand in operand, operand not in operand 
-if single_char in abc:
-    print(f"Letter '{single_char}' is in the list")
-else:
-    print(f"Letter '{single_char}' is not in the list")
+#     password_confirmation = input("Confirm: ")
 
-if single_char2 not in abc:
-    print(f"Letter '{single_char2}' is not in the list")
-else:
-    print(f"Letter '{single_char2}' is in the list")
+#     successfully_confirm = password == password_confirmation
 
-# while loops
-successfully_confirm = False
+#     confirmation_message = "Password updated." \
+#         if successfully_confirm else "Confirmation was not successful. Please try again."
 
-while not successfully_confirm:
-    password = input("Enter your new password: ")
+#     print(confirmation_message)
 
-    password_confirmation = input("Confirm: ")
+# # for loops
 
-    successfully_confirm = password == password_confirmation
+file_path = "example.txt"
 
-    confirmation_message = "Password updated." \
-        if successfully_confirm else "Confirmation was not successful. Please try again."
+# Opens the file in read/text mode
+file = open(file_path)
 
-    print(confirmation_message)
+print(type(file))  # <class '_io.TextIOWrapper'> returns a class type
 
-# for loops
+data = file.read(8)
 
+# print(data)
 
+file.close()
+
+file = open(file_path)
+
+# Read a single line: Stays at that line where it ends.
+record = file.readline()
+
+# print(record)
+
+file.close()
+
+with open(file_path) as file:
+    for record in file:
+        print(record.rstrip())

@@ -57,7 +57,8 @@ file_two.close()
 
 """
 Using 'with' statements for file handling 
-- Automatically closes the file when code block exists
+- Automatically closes the file when code block exists.
+- Use f-strings to print out data in text output. 
 """
 
 with open("example.txt", "r") as file:
