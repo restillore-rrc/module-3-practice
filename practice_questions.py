@@ -75,3 +75,21 @@ from math import pi
 #     print("Exclamatory")
 # else:
 #     print("Other")
+
+# # Question 9:
+# input = input("Enter an email: ")
+
+# if '@' in input:
+#     print("Valid email")
+# else:
+#     print("Enter valid email")
+
+# # Question 10:
+# input = [input("Enter new password: "), input("Re-enter password: ")]
+
+# if input[0] == input[1]:
+#     print("New password confirmed")
+# else:
+#     print("Incorrect password")
+
+# Question 11:
