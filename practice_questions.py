@@ -8,6 +8,7 @@ Usage: Practice and Notes
 from random import randint
 from math import pow
 from math import pi
+from math import sqrt
 
 # # Question 1: Print lowest of random int
 # value_one = randint(0, 100)
@@ -92,4 +93,88 @@ from math import pi
 # else:
 #     print("Incorrect password")
 
-# Question 11:
+# # Question 11:
+# question_eleven_input = input("Enter your username: ")
+
+# if len(question_eleven_input) >= 6 and len(question_eleven_input):
+#     print(f"Welcome, {question_eleven_input}")
+# else:
+#     print("Invalid username")
+
+# # Question 12:
+# input = input("enter domain name: ")
+# split = input.split('.')
+
+# if split[2] == "gov":
+#     print("Government")
+# elif split[2] == "edu":
+#     print("University")
+# elif split[2] == "com":
+#     print("Business")
+# elif split[2] == "org":
+#     print("Organization")
+# else:
+#     print("Other")
+
+# # Question 13:
+# input = int(input("Enter a temperature: "))
+
+# if input >= 90 and input < 110:
+#     print("Summer")
+# elif input >= 70 and input < 90:
+#     print("Spring")
+# elif input >= 50 and input < 70:
+#     print("Fall")
+# elif input > 110 or input < -5:
+#     print("Invalid")
+# else:
+#     print("Winter")
+
+# # Question 14:
+# input = input("Enter a year: ")
+
+# if len(input) == 2:
+#     print(int(input) + 2000)
+# elif len(input) == 4:
+#     print(input)
+# else:
+#     print("Invalid")
+
+# # Question 15:
+# valid_inputs = ["admin", "open"]
+# input = [input("Enter username: "), input("Enter password: ")]
+
+# if input[0] == valid_inputs[0] and input[1] == valid_inputs[1]:
+#     print("Welcome.")
+# elif input[0] == valid_inputs[0] and not input[1] == valid_inputs[1]:
+#     print("Correct username, incorrect password.")
+# elif not input[0] == valid_inputs[0] and input[1] == valid_inputs[1]:
+#     print("Incorrect username, correct password.")
+# else:
+#     print("Incorrect username and password.")
+
+# # Question 16: Re-do
+# value = 0
+# inc = 0
+# sum = 0
+# number = 0
+
+# while value < 10:
+#     value = float(input("Enter a value: "))
+
+# while sqrt(value) >= 1.01:
+#     number = sqrt(value)
+#     print(number)
+#     sum = sqrt(number)
+#     print(sum)
+#     inc += 1
+
+# print(inc)
+
+# Question 17:
+input = input("Enter an email: ")
+
+while '@' not in input:
+    print("Enter valid email address")
+else:
+    print(input)
