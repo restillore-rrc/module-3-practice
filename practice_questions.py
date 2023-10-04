@@ -171,10 +171,12 @@ from math import sqrt
 
 # print(inc)
 
-# Question 17:
-input = input("Enter an email: ")
+# # Question 17:
+# input = input("Enter an email: ")
 
-while '@' not in input:
-    print("Enter valid email address")
-else:
-    print(input)
+# while '@' not in input:
+#     print("Enter valid email address")
+# else:
+#     print(input)
+
+# Question 18:

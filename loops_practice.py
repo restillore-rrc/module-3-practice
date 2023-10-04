@@ -127,5 +127,4 @@ while entered_number != 0:  # number not equal to zero = true
 print("The sum is", sum)
 
 # Question 13 - Write a program to reverse the numbers entered - use while loop.
-
 reversed_number = int(input("Enter a number to reverse it: "))
