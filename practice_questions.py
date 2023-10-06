@@ -172,11 +172,70 @@ from math import sqrt
 # print(inc)
 
 # # Question 17:
-# input = input("Enter an email: ")
+# valid_email = False
 
-# while '@' not in input:
-#     print("Enter valid email address")
-# else:
-#     print(input)
+# while not valid_email:
+#     email = input("Enter email: ")
+#     if '@' not in email:
+#         print("Invalid email")
+#     else:
+#         valid_email = True
+#         print(email)
 
-# Question 18:
+
+# # Question 18:
+# file_path = "input.txt"
+
+# with open(file_path) as file:
+#     for data in file:
+#         int_number, float_number = data.strip().split(',')
+#         print(int_number, float_number)
+
+# # Question 19:
+# sum = 0
+
+# for int in range(10, 20):
+#     sum += int
+
+# print(sum)
+
+# # Question 20:
+# sum = 1
+
+# for numb in range(3, 8):
+#     sum *= numb
+
+# print(sum)
+
+# # Question 21:
+# inc = 0
+
+# for numb in range(33, 97):
+#     if numb % 7 == 0:
+#         inc += 1
+
+# print(inc)
+
+# # Question 22:
+# integer = False
+
+# while not integer:
+#     value = input("Enter a value: ")
+#     if int(value.isnumeric()):
+#         print("Hello world | " * int(value))
+#         integer = True
+#     else:
+#         print("Invalid value")
+
+# # Question 23: Re-do
+# string_input = input("Enter a string: ")
+# char_string = ''
+
+# for char in string_input:
+#     string_input.split(char)
+#     char_string = char + " "
+
+# print(char_string)
+
+# Question 24:
+int_input = int(input("Enter a value to convert into a factorial: "))
