@@ -19,7 +19,7 @@ Boolean Expressions:
 Three Main Types:
 - Sequential: (Line by line) How statements are executed the way they are written.
 - Selection: (if-else) Based on the conditions.
-- Iteration: (loops) Exectuted repeatedly.
+- Iteration: (loops) Executed repeatedly.
 
 In Python conditional statements are the primary control structure
 (if, elif, else) and (for and while loops)
@@ -36,8 +36,8 @@ else:
 
 """
 Importance of Logic and Loops in Programming 
-- Condtional statements helps you make the right decision based on specific condtions  
-- Loops helps you automate reptitive tasks/code and perform multiple operations at the same time 
+- Conditional statements helps you make the right decision based on specific conditions  
+- Loops helps you automate repetitive tasks/code and perform multiple operations at the same time 
 - Implement complex algorithms 
 """
 # Code example of loops
@@ -49,14 +49,14 @@ Indentation - Python heavily relies on indentation
 
 Key Points:
 - Consistency: Use same number of tabs for each character of each line 
-- Required: Identation determines the scope of code blocks
-- Readability: Identation makes code readable and easier to understand and maintain 
+- Required: Indentation determines the scope of code blocks
+- Readability: Indentation makes code readable and easier to understand and maintain 
 """
-# Example of indentation 
+# Example of indentation
 new_number = 6
 
 if new_number > 0:
-    print("Number is a postive")
+    print("Number is a positive")
 if new_number % 2 == 0:
     print("Number is even")
 else:

@@ -9,8 +9,8 @@ Usage: Practice and Notes
 if, elif, and else statements
 
 if: Evaluates the first condition and executes the next code block if True.
-elif: Evaluaets the next condtion if previous was false.
-else: Executes the final code block if the previous condtions were false.
+elif: Evaluates the next condition if previous was false.
+else: Executes the final code block if the previous conditions were false.
 """
 # Define a variable if the person is over 21
 age = 20
@@ -24,7 +24,7 @@ else:
 
 """
 Nested Conditions 
-- Conditional statements inside other condtional statements
+- Conditional statements inside other conditional statements
 """
 # Nested Conditions Example
 horizontal_position = 3
@@ -49,18 +49,18 @@ Comparison Operators:
 age1 = 5
 age2 = 10
 
-print(age1 == age2) # False
-print(age1 != age2) # True
-print(age1 < age2) # True
-print(age1 > age2) # False
-print(age1 <= age2) # True
-print(age1 >= age2) # False
+print(age1 == age2)  # False
+print(age1 != age2)  # True
+print(age1 < age2)  # True
+print(age1 > age2)  # False
+print(age1 <= age2)  # True
+print(age1 >= age2)  # False
 
 """
 Logical Operators (and, or, not):
 - and: Returns True if both conditions are True
 - or: Returns True if one of the two conditions are True
-- not: Retuns True if false and Returns False if True
+- not: Returns True if false and Returns False if True
 """
 # Logical Operator Example:
 age1 = 5
@@ -82,7 +82,7 @@ if not age1 > 10:
 Ternary Expressions (Conditional Expressions):
 - Another way of writing conditional statements by in a simple way.
 
-synatx:
+syntax:
 value_if_true if condition else value_if_false
 """
 # Example of a Ternary Expressions
@@ -96,5 +96,3 @@ Membership Operators:
 - in: True when a value is in the object
 - not in: True when a value is not in the object
 """
-
-
